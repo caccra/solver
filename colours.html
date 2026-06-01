@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colours — Solvor General Trading & Investments</title>
+  <link rel="icon" type="image/png" href="images/solvor company logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/solvor company logo.png" alt="Solvor Paints" class="nav-logo-img" />
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">Services <span class="chevron">&#8964;</span></a>
+          <ul class="dropdown">
+            <li><a href="services.html">Painting</a></li>
+            <li><a href="services.html">Paint Supply</a></li>
+            <li><a href="services.html">Welding & Steel</a></li>
+            <li><a href="services.html">Doors</a></li>
+            <li><a href="services.html">Glass & Aluminium</a></li>
+            <li><a href="services.html">General Construction</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="products.html">Products <span class="chevron">&#8964;</span></a>
+          <ul class="dropdown">
+            <li><a href="products.html">Vinyl Silk Emulsion</a></li>
+            <li><a href="products.html">Matt Emulsion</a></li>
+            <li><a href="products.html">Weatherguard Matt</a></li>
+            <li><a href="products.html">Textured Paint</a></li>
+            <li><a href="products.html">Roofing Paint</a></li>
+            <li><a href="colours.html">Colour Range</a></li>
+          </ul>
+        </li>
+        <li><a href="colours.html" class="active">Colours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1542238060-646c7ed65622?w=1400&q=80&auto=format&fit=crop'); background-size:cover; background-position:center;">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="hero-eyebrow">Decorative Range</span>
+      <h1>Colour Explorer</h1>
+      <p>Find the perfect shade for every surface, every room, every style</p>
+    </div>
+  </section>
+
+  <!-- COLOUR EXPLORER -->
+  <section class="section colours-page">
+    <div class="container">
+
+      <!-- Filter Tabs -->
+      <div class="colour-filter-tabs" id="colourTabs">
+        <button class="tab-btn active" data-group="all">All Colours</button>
+        <button class="tab-btn" data-group="reds">Reds &amp; Oranges</button>
+        <button class="tab-btn" data-group="yellows">Yellows</button>
+        <button class="tab-btn" data-group="greens">Greens</button>
+        <button class="tab-btn" data-group="blues">Blues</button>
+        <button class="tab-btn" data-group="purples">Purples &amp; Pinks</button>
+        <button class="tab-btn" data-group="neutrals">Whites &amp; Neutrals</button>
+        <button class="tab-btn" data-group="browns">Browns &amp; Beiges</button>
+        <button class="tab-btn" data-group="greys">Greys &amp; Darks</button>
+        <button class="tab-btn" data-group="metallics">Metallics</button>
+      </div>
+
+      <!-- Reds & Oranges -->
+      <div class="colour-family" data-group="reds">
+        <h3 class="family-title">Reds &amp; Oranges</h3>
+        <div class="chips-grid">
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#800020;"></div><div class="chip-meta"><span class="chip-name">Burgundy</span><span class="chip-code">SW-001</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#9b1b30;"></div><div class="chip-meta"><span class="chip-name">Garnet</span><span class="chip-code">SW-002</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#8b0000;"></div><div class="chip-meta"><span class="chip-name">Apple Red</span><span class="chip-code">SW-003</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#cc2200;"></div><div class="chip-meta"><span class="chip-name">Combustion</span><span class="chip-code">SW-004</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ff6347;"></div><div class="chip-meta"><span class="chip-name">Tomato</span><span class="chip-code">SW-005</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#e8320a;"></div><div class="chip-meta"><span class="chip-name">Terracotta</span><span class="chip-code">SW-006</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ff7518;"></div><div class="chip-meta"><span class="chip-name">Pumpkin</span><span class="chip-code">SW-007</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ec5800;"></div><div class="chip-meta"><span class="chip-name">Persimmon</span><span class="chip-code">SW-008</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ff8c00;"></div><div class="chip-meta"><span class="chip-name">Mango</span><span class="chip-code">SW-009</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ff7f50;"></div><div class="chip-meta"><span class="chip-name">Coral</span><span class="chip-code">SW-010</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#d4470a;"></div><div class="chip-meta"><span class="chip-name">Fahrenheit</span><span class="chip-code">SW-011</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#6b0000;"></div><div class="chip-meta"><span class="chip-name">Heart of Darkness</span><span class="chip-code">SW-012</span></div></div>
+        </div>
+      </div>
+
+      <!-- Yellows -->
+      <div class="colour-family" data-group="yellows">
+        <h3 class="family-title">Yellows &amp; Warm Tones</h3>
+        <div class="chips-grid">
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ffdb58;"></div><div class="chip-meta"><span class="chip-name">Mustard</span><span class="chip-code">SW-020</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ffd700;"></div><div class="chip-meta"><span class="chip-name">Sunflower</span><span class="chip-code">SW-021</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#fffacd;"></div><div class="chip-meta"><span class="chip-name">Butter</span><span class="chip-code">SW-022</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ffff99;"></div><div class="chip-meta"><span class="chip-name">Canary</span><span class="chip-code">SW-023</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#fffde7;"></div><div class="chip-meta"><span class="chip-name">Sunlight Yellow</span><span class="chip-code">SW-024</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#f5f5dc;"></div><div class="chip-meta"><span class="chip-name">Ivory</span><span class="chip-code">SW-025</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#faebd7;"></div><div class="chip-meta"><span class="chip-name">Magnolia</span><span class="chip-code">SW-026</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ffe4b5;"></div><div class="chip-meta"><span class="chip-name">Peach</span><span class="chip-code">SW-027</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#d4a017;"></div><div class="chip-meta"><span class="chip-name">Craftsman Gold</span><span class="chip-code">SW-028</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#e89415;"></div><div class="chip-meta"><span class="chip-name">Solvor Amber</span><span class="chip-code">SW-029</span></div></div>
+        </div>
+      </div>
+
+      <!-- Greens -->
+      <div class="colour-family" data-group="greens">
+        <h3 class="family-title">Greens</h3>
+        <div class="chips-grid">
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#3b7a57;"></div><div class="chip-meta"><span class="chip-name">Hunter</span><span class="chip-code">SW-030</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#4a7c59;"></div><div class="chip-meta"><span class="chip-name">Garden</span><span class="chip-code">SW-031</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#808000;"></div><div class="chip-meta"><span class="chip-name">Olive</span><span class="chip-code">SW-032</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#7fff00;"></div><div class="chip-meta"><span class="chip-name">Chartreuse</span><span class="chip-code">SW-033</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#32cd32;"></div><div class="chip-meta"><span class="chip-name">Lime</span><span class="chip-code">SW-034</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#8fbc8f;"></div><div class="chip-meta"><span class="chip-name">Sage</span><span class="chip-code">SW-035</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#228b22;"></div><div class="chip-meta"><span class="chip-name">Rustic Green</span><span class="chip-code">SW-036</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#2e8b57;"></div><div class="chip-meta"><span class="chip-name">Milo Green</span><span class="chip-code">SW-037</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#20b2aa;"></div><div class="chip-meta"><span class="chip-name">Mermaid</span><span class="chip-code">SW-038</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#3d9970;"></div><div class="chip-meta"><span class="chip-name">Apple Green</span><span class="chip-code">SW-039</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#87ceeb;"></div><div class="chip-meta"><span class="chip-name">Mint Green</span><span class="chip-code">SW-040</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#4a5240;"></div><div class="chip-meta"><span class="chip-name">Moss</span><span class="chip-code">SW-041</span></div></div>
+        </div>
+      </div>
+
+      <!-- Blues -->
+      <div class="colour-family" data-group="blues">
+        <h3 class="family-title">Blues</h3>
+        <div class="chips-grid">
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#000080;"></div><div class="chip-meta"><span class="chip-name">Navy</span><span class="chip-code">SW-050</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#4169e1;"></div><div class="chip-meta"><span class="chip-name">Royal</span><span class="chip-code">SW-051</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#1560bd;"></div><div class="chip-meta"><span class="chip-name">Deep Blue</span><span class="chip-code">SW-052</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#6495ed;"></div><div class="chip-meta"><span class="chip-name">French Blue</span><span class="chip-code">SW-053</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#40e0d0;"></div><div class="chip-meta"><span class="chip-name">Turquoise</span><span class="chip-code">SW-054</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#2c5f8a;"></div><div class="chip-meta"><span class="chip-name">Colonial</span><span class="chip-code">SW-055</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#2e8b9a;"></div><div class="chip-meta"><span class="chip-name">Sea Foam</span><span class="chip-code">SW-056</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#1e90ff;"></div><div class="chip-meta"><span class="chip-name">Ballroom Blue</span><span class="chip-code">SW-057</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#00008b;"></div><div class="chip-meta"><span class="chip-name">Enamel Blue</span><span class="chip-code">SW-058</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#add8e6;"></div><div class="chip-meta"><span class="chip-name">Soft Blue</span><span class="chip-code">SW-059</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#0d2a5c;"></div><div class="chip-meta"><span class="chip-name">Midnight Navy</span><span class="chip-code">SW-060</span></div></div>
+        </div>
+      </div>
+
+      <!-- Purples & Pinks -->
+      <div class="colour-family" data-group="purples">
+        <h3 class="family-title">Purples &amp; Pinks</h3>
+        <div class="chips-grid">
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#722f37;"></div><div class="chip-meta"><span class="chip-name">Merlot</span><span class="chip-code">SW-070</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#843179;"></div><div class="chip-meta"><span class="chip-name">Plum</span><span class="chip-code">SW-071</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#6f2da8;"></div><div class="chip-meta"><span class="chip-name">Grape</span><span class="chip-code">SW-072</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#7b3f8a;"></div><div class="chip-meta"><span class="chip-name">Deep Purple</span><span class="chip-code">SW-073</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#e6e6fa;"></div><div class="chip-meta"><span class="chip-name">Lavender</span><span class="chip-code">SW-074</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ccccff;"></div><div class="chip-meta"><span class="chip-name">Periwinkle</span><span class="chip-code">SW-075</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#c8a2c8;"></div><div class="chip-meta"><span class="chip-name">Lilac</span><span class="chip-code">SW-076</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#da70d6;"></div><div class="chip-meta"><span class="chip-name">Orchid</span><span class="chip-code">SW-077</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ff69b4;"></div><div class="chip-meta"><span class="chip-name">Pink</span><span class="chip-code">SW-078</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ffb6c1;"></div><div class="chip-meta"><span class="chip-name">Blush</span><span class="chip-code">SW-079</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#d4478c;"></div><div class="chip-meta"><span class="chip-name">Concord Bloom</span><span class="chip-code">SW-080</span></div></div>
+        </div>
+      </div>
+
+      <!-- Whites & Neutrals -->
+      <div class="colour-family" data-group="neutrals">
+        <h3 class="family-title">Whites &amp; Neutrals</h3>
+        <div class="chips-grid">
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ffffff; border:1px solid #ddd;"></div><div class="chip-meta"><span class="chip-name">Pure White</span><span class="chip-code">SW-090</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#f5f5f0;"></div><div class="chip-meta"><span class="chip-name">Off White</span><span class="chip-code">SW-091</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#f8f4ec;"></div><div class="chip-meta"><span class="chip-name">Broken White</span><span class="chip-code">SW-092</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#faf0e6;"></div><div class="chip-meta"><span class="chip-name">Reviving White</span><span class="chip-code">SW-093</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#f5f0e8;"></div><div class="chip-meta"><span class="chip-name">Stylized White</span><span class="chip-code">SW-094</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#e8e0d5;"></div><div class="chip-meta"><span class="chip-name">Neutral Era</span><span class="chip-code">SW-095</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#d5c9b5;"></div><div class="chip-meta"><span class="chip-name">Precious Stone</span><span class="chip-code">SW-096</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#c8b8a0;"></div><div class="chip-meta"><span class="chip-name">Rooftop</span><span class="chip-code">SW-097</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#e0d5c0;"></div><div class="chip-meta"><span class="chip-name">Sea Oats</span><span class="chip-code">SW-098</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#f5e6c8;"></div><div class="chip-meta"><span class="chip-name">Ivory Cottage</span><span class="chip-code">SW-099</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#f2e8d0;"></div><div class="chip-meta"><span class="chip-name">Guided White</span><span class="chip-code">SW-100</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#f0ebe0;"></div><div class="chip-meta"><span class="chip-name">Relative White</span><span class="chip-code">SW-101</span></div></div>
+        </div>
+      </div>
+
+      <!-- Browns & Beiges -->
+      <div class="colour-family" data-group="browns">
+        <h3 class="family-title">Browns &amp; Beiges</h3>
+        <div class="chips-grid">
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#7b3f00;"></div><div class="chip-meta"><span class="chip-name">Chocolate</span><span class="chip-code">SW-110</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#3d1c07;"></div><div class="chip-meta"><span class="chip-name">Solvor Brown</span><span class="chip-code">SW-111</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#c47722;"></div><div class="chip-meta"><span class="chip-name">Fox</span><span class="chip-code">SW-112</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#c19a6b;"></div><div class="chip-meta"><span class="chip-name">Fawn</span><span class="chip-code">SW-113</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#c8a951;"></div><div class="chip-meta"><span class="chip-name">Khaki</span><span class="chip-code">SW-114</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#d2b48c;"></div><div class="chip-meta"><span class="chip-name">Rambler</span><span class="chip-code">SW-115</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#c4a882;"></div><div class="chip-meta"><span class="chip-name">Natural Wood</span><span class="chip-code">SW-116</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#b8956a;"></div><div class="chip-meta"><span class="chip-name">Wicker Basket</span><span class="chip-code">SW-117</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#8b7355;"></div><div class="chip-meta"><span class="chip-name">Mission Oak</span><span class="chip-code">SW-118</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#d2b48c;"></div><div class="chip-meta"><span class="chip-name">Light Stone</span><span class="chip-code">SW-119</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#c8b89a;"></div><div class="chip-meta"><span class="chip-name">Century Beige</span><span class="chip-code">SW-120</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#c5a882;"></div><div class="chip-meta"><span class="chip-name">Student Cream</span><span class="chip-code">SW-121</span></div></div>
+        </div>
+      </div>
+
+      <!-- Greys & Darks -->
+      <div class="colour-family" data-group="greys">
+        <h3 class="family-title">Greys &amp; Darks</h3>
+        <div class="chips-grid">
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#ddd;"></div><div class="chip-meta"><span class="chip-name">Light Grey</span><span class="chip-code">SW-130</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#a8a8a8;"></div><div class="chip-meta"><span class="chip-name">Smoke Grey</span><span class="chip-code">SW-131</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#888888;"></div><div class="chip-meta"><span class="chip-name">Dove</span><span class="chip-code">SW-132</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#aaaaaa;"></div><div class="chip-meta"><span class="chip-name">Stone</span><span class="chip-code">SW-133</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#36454f;"></div><div class="chip-meta"><span class="chip-name">Deep Stone</span><span class="chip-code">SW-134</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#2f4f4f;"></div><div class="chip-meta"><span class="chip-name">Classic Shutter</span><span class="chip-code">SW-135</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#3d3d3d;"></div><div class="chip-meta"><span class="chip-name">Charcoal</span><span class="chip-code">SW-136</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#1a1a1a;"></div><div class="chip-meta"><span class="chip-name">Charcoal Black</span><span class="chip-code">SW-137</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch" style="background:#000000;"></div><div class="chip-meta"><span class="chip-name">Black</span><span class="chip-code">SW-138</span></div></div>
+        </div>
+      </div>
+
+      <!-- Metallics -->
+      <div class="colour-family" data-group="metallics">
+        <h3 class="family-title">Metallics</h3>
+        <div class="chips-grid">
+          <div class="paint-chip-card"><div class="chip-swatch metallic" style="background: linear-gradient(135deg, #d4af37, #f0d060, #b8960a);"></div><div class="chip-meta"><span class="chip-name">Metallic Gold</span><span class="chip-code">SW-140</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch metallic" style="background: linear-gradient(135deg, #b0b0b0, #e0e0e0, #909090);"></div><div class="chip-meta"><span class="chip-name">Metallic Silver</span><span class="chip-code">SW-141</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch metallic" style="background: linear-gradient(135deg, #cd7f32, #e89040, #a06020);"></div><div class="chip-meta"><span class="chip-name">Metallic Bronze</span><span class="chip-code">SW-142</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch metallic" style="background: linear-gradient(135deg, #b87333, #d08040, #986020);"></div><div class="chip-meta"><span class="chip-name">Copper</span><span class="chip-code">SW-143</span></div></div>
+          <div class="paint-chip-card"><div class="chip-swatch metallic" style="background: linear-gradient(135deg, #8b7536, #b09840, #706020);"></div><div class="chip-meta"><span class="chip-name">Antique Gold</span><span class="chip-code">SW-144</span></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container cta-inner">
+      <div>
+        <h2>Ready to Colour Your World?</h2>
+        <p>Order Solvor Paints today or talk to our team for a custom colour consultation.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+        <a href="products.html" class="btn btn-outline">Our Products</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo"><img src="images/solvor company logo.png" alt="Solvor Paints" class="footer-logo-img" /></div>
+        <p>Let's Solve it with together</p>
+        <p class="footer-reg">Reg. No: COY-WBS78Y</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="colours.html">Colours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-services">
+        <h4>Services</h4>
+        <ul>
+          <li>Painting & Paint Supply</li>
+          <li>Welding & Steel Works</li>
+          <li>Doors & Aluminium</li>
+          <li>Glass Solutions</li>
+          <li>General Construction</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Jebel, Gudele, Juba<br>South Sudan</p>
+        <p><a href="tel:+211980373157">+211 980 373 157</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Solvor General Trading & Investments Company Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="back-to-top">&#8593;</a>
+  <script src="script.js"></script>
+</body>
+</html>

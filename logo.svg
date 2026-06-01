@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 72" width="220" height="72" role="img" aria-label="Solvor Paints Logo">
+  <!-- Starburst / sunburst rays -->
+  <g transform="translate(196,14)">
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(0)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(22)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(44)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(66)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(88)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(110)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(132)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(154)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(176)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(198)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(220)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(242)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(264)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(286)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(308)"/>
+    <polygon points="0,0 -2.5,18 2.5,18" fill="white" transform="rotate(330)"/>
+    <circle cx="0" cy="0" r="3" fill="white"/>
+  </g>
+
+  <!-- "Solvor" wordmark -->
+  <text
+    x="4" y="52"
+    font-family="'Montserrat', 'Arial Black', sans-serif"
+    font-size="42"
+    font-weight="900"
+    fill="white"
+    letter-spacing="-1"
+  >Solvor</text>
+
+  <!-- Blue swoosh arc under the wordmark -->
+  <path
+    d="M4,61 Q62,52 124,59 Q160,63 192,58"
+    stroke="#3a80d2"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- "Paints" sub-label -->
+  <text
+    x="6" y="70"
+    font-family="'Montserrat', 'Arial', sans-serif"
+    font-size="11"
+    font-weight="700"
+    fill="rgba(255,255,255,0.75)"
+    letter-spacing="3"
+  >PAINTS</text>
+</svg>

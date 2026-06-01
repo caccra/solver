@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Solvor General Trading & Investments</title>
+  <link rel="icon" type="image/png" href="images/solvor company logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/solvor company logo.png" alt="Solvor Paints" class="nav-logo-img" />
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="services.html">Services <span class="chevron">&#8964;</span></a>
+          <ul class="dropdown">
+            <li><a href="services.html">Painting</a></li>
+            <li><a href="services.html">Paint Supply</a></li>
+            <li><a href="services.html">Welding & Steel</a></li>
+            <li><a href="services.html">Doors</a></li>
+            <li><a href="services.html">Glass & Aluminium</a></li>
+            <li><a href="services.html">General Construction</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="products.html">Products <span class="chevron">&#8964;</span></a>
+          <ul class="dropdown">
+            <li><a href="products.html">Vinyl Silk Emulsion</a></li>
+            <li><a href="products.html">Matt Emulsion</a></li>
+            <li><a href="products.html">Weatherguard Matt</a></li>
+            <li><a href="products.html">Textured Paint</a></li>
+            <li><a href="products.html">Roofing Paint</a></li>
+            <li><a href="colours.html">Colour Range</a></li>
+          </ul>
+        </li>
+        <li><a href="colours.html">Colours</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image:url('https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=1400&q=80&auto=format&fit=crop'); background-size:cover; background-position:center;">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="hero-eyebrow">Reach Us</span>
+      <h1>Contact Us</h1>
+      <p>Let's solve it together — get in touch for a free consultation</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p style="color:var(--text-muted); margin-bottom:36px;">Whether you need painting, supply, welding, doors, glass, or full construction — our team is here to help. Reach us through any of the channels below.</p>
+
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Address</strong>
+              <p>Jebel, Gudele<br>Juba, South Sudan</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+211980373157">+211 980 373 157</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🏢</span>
+            <div>
+              <strong>Company Registration</strong>
+              <p>Reg. No: COY-WBS78Y<br>TIN: B202405135KDX3E</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🌍</span>
+            <div>
+              <strong>Service Area</strong>
+              <p>South Sudan & East African Countries</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕐</span>
+            <div>
+              <strong>Working Hours</strong>
+              <p>Monday – Saturday<br>8:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <h3 style="font-family:'Montserrat',sans-serif; font-size:1.3rem; font-weight:800; color:var(--primary); margin-bottom:24px;">Send Us a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+211 ..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option>Painting</option>
+              <option>Paint Supply</option>
+              <option>Welding & Steel Works</option>
+              <option>Doors</option>
+              <option>Glass & Aluminium</option>
+              <option>General Construction</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project — location, size, timeline..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send Message</button>
+          <p class="form-success" id="form-success">Thank you! We'll get back to you shortly.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/solvor company logo.png" alt="Solvor Paints" class="footer-logo-img" />
+        </div>
+        <p>Let's Solve it with together</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="colours.html">Colours</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-services">
+        <h4>Services</h4>
+        <ul>
+          <li>Painting & Paint Supply</li>
+          <li>Welding & Steel Works</li>
+          <li>Doors & Aluminium</li>
+          <li>Glass Solutions</li>
+          <li>General Construction</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Jebel, Gudele, Juba<br>South Sudan</p>
+        <p><a href="tel:+211980373157">+211 980 373 157</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Solvor General Trading & Investments Company Limited. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="back-to-top">&#8593;</a>
+  <script src="script.js"></script>
+</body>
+</html>

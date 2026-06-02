@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Solvor General Trading & Investments</title>
+  <title>Contact Solvor — Get a Quote | Juba, South Sudan</title>
+  <meta name="description" content="Contact Solvor General Trading &amp; Investments for painting, welding, doors, glass and construction services in Juba, South Sudan. Call +211 980 373 157 or send us a message." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://solvorpaints.com/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://solvorpaints.com/contact.html" />
+  <meta property="og:title" content="Contact Solvor — Get a Free Quote" />
+  <meta property="og:description" content="Reach Solvor in Juba, South Sudan. Free consultation for all painting, construction and building services across East Africa." />
+  <meta property="og:image" content="https://solvorpaints.com/images/solvor company logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" href="images/solvor company logo.png" />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
@@ -13,7 +22,7 @@
   <nav class="navbar scrolled" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
-        <img src="images/solvor company logo.png" alt="Solvor Paints" class="nav-logo-img" />
+        <img src="images/solvor company logo.webp" alt="Solvor Paints" class="nav-logo-img" />
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -44,6 +53,7 @@
           </ul>
         </li>
         <li><a href="colours.html">Colours</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </div>
@@ -104,7 +114,11 @@
           </div>
         </div>
 
-        <form class="contact-form" onsubmit="handleSubmit(event)">
+        <form class="contact-form" id="contactForm">
+          <!-- Get your free access key at https://web3forms.com — replace the value below -->
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="New enquiry from Solvor website" />
+          <input type="hidden" name="from_name" value="Solvor Website" />
           <h3 style="font-family:'Montserrat',sans-serif; font-size:1.3rem; font-weight:800; color:var(--primary); margin-bottom:24px;">Send Us a Message</h3>
           <div class="form-row">
             <div class="form-group">
@@ -118,7 +132,7 @@
           </div>
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="your@email.com" />
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
           </div>
           <div class="form-group">
             <label for="service">Service Interested In</label>
@@ -126,9 +140,9 @@
               <option value="">Select a service</option>
               <option>Painting</option>
               <option>Paint Supply</option>
-              <option>Welding & Steel Works</option>
+              <option>Welding &amp; Steel Works</option>
               <option>Doors</option>
-              <option>Glass & Aluminium</option>
+              <option>Glass &amp; Aluminium</option>
               <option>General Construction</option>
               <option>Other</option>
             </select>
@@ -139,6 +153,7 @@
           </div>
           <button type="submit" class="btn btn-primary full-width">Send Message</button>
           <p class="form-success" id="form-success">Thank you! We'll get back to you shortly.</p>
+          <p class="form-success" id="form-error" style="color:#991b1b;background:#fee2e2;border-color:#fecaca;display:none;"></p>
         </form>
       </div>
     </div>
@@ -148,9 +163,9 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <div class="footer-logo">
-          <img src="images/solvor company logo.png" alt="Solvor Paints" class="footer-logo-img" />
+          <img src="images/solvor company logo.webp" alt="Solvor Paints" class="footer-logo-img" />
         </div>
-        <p>Let's Solve it with together</p>
+        <p>Let's Solve it Together.</p>
       </div>
       <div class="footer-links">
         <h4>Quick Links</h4>

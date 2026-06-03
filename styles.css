@@ -148,11 +148,6 @@ h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   fill: var(--accent-light);
   flex-shrink: 0;
 }
-.topbar-divider {
-  width: 1px;
-  height: 14px;
-  background: rgba(255,255,255,0.12);
-}
 .topbar-social {
   display: flex;
   align-items: center;
@@ -1571,7 +1566,6 @@ h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 @media (max-width: 768px) {
   .trust-grid { gap: 20px; }
   .topbar-left .topbar-item:not(:first-child) { display: none; }
-  .topbar-left .topbar-divider { display: none; }
   .topbar-right .topbar-item:last-of-type { display: none; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }

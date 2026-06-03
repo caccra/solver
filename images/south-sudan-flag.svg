@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <!-- Black stripe -->
+  <rect x="0" y="0" width="1200" height="150" fill="#000000"/>
+  <!-- White stripe -->
+  <rect x="0" y="150" width="1200" height="25" fill="#FFFFFF"/>
+  <!-- Red stripe -->
+  <rect x="0" y="175" width="1200" height="250" fill="#DD0000"/>
+  <!-- White stripe -->
+  <rect x="0" y="425" width="1200" height="25" fill="#FFFFFF"/>
+  <!-- Green stripe -->
+  <rect x="0" y="450" width="1200" height="150" fill="#078930"/>
+  <!-- Blue hoist triangle -->
+  <polygon points="0,0 0,600 480,300" fill="#0F47AF"/>
+  <!-- Gold star -->
+  <polygon points="200,230 215,280 265,280 225,310 240,360 200,330 160,360 175,310 135,280 185,280"
+           fill="#FCDD09"/>
+</svg>

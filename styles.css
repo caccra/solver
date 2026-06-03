@@ -1128,13 +1128,10 @@ h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
 }
 .ss-pride-img-main img {
   width: 100%;
-  height: 280px;
-  object-fit: cover;
-  object-position: center top;
+  height: auto;
   display: block;
-  transition: transform 0.7s ease;
 }
-.ss-pride-img-main:hover img { transform: scale(1.04); }
+.ss-pride-img-main:hover img { transform: scale(1.01); }
 
 .ss-pride-img-secondary {
   grid-column: 1 / -1;

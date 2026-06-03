@@ -1161,6 +1161,8 @@ h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   letter-spacing: 0.3px;
 }
 
+.ss-pride .section-label { color: var(--white); }
+
 .ss-pride-text h2 {
   font-size: clamp(1.7rem, 3vw, 2.4rem);
   font-weight: 900;

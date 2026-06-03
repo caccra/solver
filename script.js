@@ -56,12 +56,6 @@ if (slides.length) {
   startAuto();
 }
 
-// ── Announcement bar dismiss ──────────────────────────────
-document.getElementById('announcementClose')?.addEventListener('click', () => {
-  const bar = document.getElementById('announcementBar');
-  if (bar) { bar.style.maxHeight = bar.offsetHeight + 'px'; bar.offsetHeight; bar.style.transition = 'max-height 0.35s ease, opacity 0.35s ease'; bar.style.maxHeight = '0'; bar.style.opacity = '0'; setTimeout(() => bar.remove(), 360); }
-});
-
 // ── Animated Stats Counter ───────────────────────────────
 function animateCounter(el) {
   const target = +el.dataset.target;

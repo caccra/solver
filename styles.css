@@ -1320,40 +1320,6 @@ h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   transition: width 0.1s linear;
 }
 
-/* ── Announcement Bar ─────────────────────────────────────── */
-.announcement-bar {
-  background: var(--primary);
-  color: rgba(255,255,255,0.92);
-  padding: 10px 24px;
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: 600;
-  position: relative;
-  z-index: 1001;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.announcement-bar a { color: var(--accent-light); text-decoration: underline; }
-.announcement-bar a:hover { color: var(--white); }
-.announcement-close {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: rgba(255,255,255,0.6);
-  cursor: pointer;
-  font-size: 1rem;
-  line-height: 1;
-  padding: 4px 8px;
-  transition: color 0.2s;
-}
-.announcement-close:hover { color: var(--white); }
-.announcement-bar.hidden { display: none; }
 
 /* ── Trust Bar ────────────────────────────────────────────── */
 .trust-bar {
@@ -1591,7 +1557,6 @@ h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   .testimonials-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .whatsapp-float { bottom: 80px; right: 16px; width: 48px; height: 48px; }
-  .announcement-bar { font-size: 0.72rem; padding: 8px 40px 8px 16px; }
 }
 @media (max-width: 480px) {
   .gallery-grid { grid-template-columns: 1fr; }

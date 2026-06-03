@@ -655,12 +655,13 @@ h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: var(--radius);
-  padding: 36px 26px 28px;
+  padding: 0 0 28px;
   text-align: left;
   transition: var(--transition);
   color: var(--white);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .service-card:hover {
   background: rgba(255,255,255,0.13);
@@ -668,6 +669,15 @@ h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; line-height: 1.15; }
   box-shadow: var(--shadow-lg);
   border-color: var(--accent);
 }
+.service-card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.65s ease;
+}
+.service-card:hover .service-card-img { transform: scale(1.06); }
+.service-card-body { padding: 22px 26px 0; flex: 1; display: flex; flex-direction: column; }
 .service-icon { font-size: 2.2rem; margin-bottom: 16px; }
 .service-card h3 {
   font-size: 1rem;

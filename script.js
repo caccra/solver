@@ -1,11 +1,3 @@
-// ── Scroll progress bar ───────────────────────────────────
-const progressBar = document.createElement('div');
-progressBar.className = 'scroll-progress';
-document.body.prepend(progressBar);
-window.addEventListener('scroll', () => {
-  const pct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
-  progressBar.style.width = pct + '%';
-});
 
 // ── Navbar scroll ─────────────────────────────────────────
 const navbar   = document.getElementById('navbar');

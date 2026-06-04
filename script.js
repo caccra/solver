@@ -100,29 +100,40 @@ galleryTabs.forEach(btn => {
   });
 });
 
-// ── Contact Form — Web3Forms ──────────────────────────────
+// ── Contact Form — FormSubmit ──────────────────────────────
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const btn = contactForm.querySelector('button[type="submit"]');
+    const btn     = contactForm.querySelector('button[type="submit"]');
     const success = document.getElementById('form-success');
     const error   = document.getElementById('form-error');
+    const fd      = new FormData(contactForm);
     btn.disabled = true;
     btn.textContent = 'Sending...';
     try {
-      const res = await fetch('https://api.web3forms.com/submit', {
+      const res = await fetch('https://formsubmit.co/ajax/sales@solvorpaints.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(Object.fromEntries(new FormData(contactForm)))
+        body: JSON.stringify({
+          name:     fd.get('name'),
+          email:    fd.get('email'),
+          phone:    fd.get('phone') || '',
+          service:  fd.get('service') || '',
+          message:  fd.get('message') || '',
+          _subject: 'New enquiry from Solvor website',
+          _replyto: fd.get('email'),
+          _honey:   fd.get('_honey') || '',
+          _template: 'table'
+        })
       });
       const json = await res.json();
-      if (json.success) {
+      if (json.success === 'true' || json.success === true) {
         if (success) success.style.display = 'block';
         if (error)   error.style.display   = 'none';
         contactForm.reset();
         setTimeout(() => { if (success) success.style.display = 'none'; }, 6000);
-      } else { throw new Error(json.message); }
+      } else { throw new Error(json.message || 'Submission failed'); }
     } catch (err) {
       if (error) { error.style.display = 'block'; error.textContent = 'Something went wrong. Please call us directly on +211 980 373 157.'; }
     } finally {

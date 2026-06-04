@@ -8,7 +8,7 @@
   top: -100%;
   left: 0;
   padding: 10px 20px;
-  background: var(--primary, #0d2a5c);
+  background: var(--primary, #1a1a1a);
   color: #fff;
   font-weight: 700;
   z-index: 9999;
@@ -20,37 +20,37 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  /* Theme: Navy Blue · White · Yellow */
-  --primary:      #0d2a5c;
-  --primary-dark: #071a3e;
-  --accent:       #f0b429;
-  --accent-light: #f7c52e;
-  --navy:         #0d2a5c;
-  --navy-light:   #1a3e7a;
+  /* Theme: Charcoal · White · Orange (Benher-inspired) */
+  --primary:      #1a1a1a;
+  --primary-dark: #0f0f0f;
+  --accent:       #e85d04;
+  --accent-light: #fb923c;
+  --navy:         #1a1a1a;
+  --navy-light:   #2d2d2d;
   --white:        #ffffff;
-  --off-white:    #f5f8ff;
-  --light-gray:   #eef1f8;
+  --off-white:    #f8f7f5;
+  --light-gray:   #f0ede8;
   --text:         #1a1a1a;
-  --text-muted:   #4a5572;
-  --border:       #cdd5e8;
+  --text-muted:   #6b6b6b;
+  --border:       #e0ddd8;
   /* Fonts */
-  --font-display: 'DM Serif Display', Georgia, serif;
-  --font-sans:    'Montserrat', sans-serif;
-  --font-body:    'Open Sans', sans-serif;
+  --font-display: 'Jost', sans-serif;
+  --font-sans:    'Jost', sans-serif;
+  --font-body:    'Jost', sans-serif;
   /* Sizing */
-  --radius:    16px;
-  --radius-sm: 8px;
-  --radius-pill: 100px;
-  --shadow:    0 2px 20px rgba(13,42,92,0.08);
-  --shadow-md: 0 8px 32px rgba(13,42,92,0.14);
-  --shadow-lg: 0 16px 56px rgba(13,42,92,0.22);
+  --radius:    6px;
+  --radius-sm: 4px;
+  --radius-pill: 6px;
+  --shadow:    0 2px 20px rgba(0,0,0,0.06);
+  --shadow-md: 0 8px 32px rgba(0,0,0,0.12);
+  --shadow-lg: 0 16px 56px rgba(0,0,0,0.20);
   --transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
   --topbar-h: 38px;
   --nav-h: 70px;
 }
 
 html { scroll-behavior: smooth; }
-body { font-family: 'Open Sans', sans-serif; color: var(--text); background: var(--white); line-height: 1.7; }
+body { font-family: 'Jost', sans-serif; color: var(--text); background: var(--white); line-height: 1.65; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
@@ -64,7 +64,7 @@ img { max-width: 100%; display: block; }
 /* ── Typography scale ─────────────────────────────────────── */
 h1, h2, h3, h4 { font-family: var(--font-sans); line-height: 1.15; }
 /* Display headings — serif for editorial gravitas */
-h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px; }
+h2 { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.5px; }
 .section-header h2,
 .about-teaser-text h2,
 .about-text h2,
@@ -72,7 +72,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .cta-inner h2,
 .page-hero-content h1 {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 800;
 }
 
 /* ── Buttons ──────────────────────────────────────────────── */
@@ -110,7 +110,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
   background: var(--accent-light);
   border-color: var(--accent-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(240,180,41,0.50);
+  box-shadow: 0 8px 28px rgba(232,93,4,0.45);
 }
 .btn-primary:hover::after { transform: translateX(4px); }
 
@@ -242,14 +242,14 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 }
 .nav-logo-img:hover { opacity: 0.88; }
 .logo-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 1.55rem;
   font-weight: 900;
   color: var(--white);
   letter-spacing: -1px;
 }
 .logo-sub {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   color: var(--accent-light);
@@ -271,7 +271,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
   gap: 4px;
   padding: 8px 14px;
   color: rgba(255,255,255,0.88);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.4px;
@@ -314,7 +314,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
   display: block;
   padding: 10px 18px;
   color: var(--text);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.88rem;
   font-weight: 600;
   transition: var(--transition);
@@ -387,10 +387,10 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .about-photo-badge {
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  background: linear-gradient(transparent, rgba(7,26,62,0.85));
+  background: linear-gradient(transparent, rgba(0,0,0,0.85));
   padding: 40px 24px 20px;
   color: var(--white);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
 }
@@ -439,7 +439,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .slide-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(110deg, rgba(7,26,62,0.88) 0%, rgba(13,42,92,0.70) 50%, rgba(7,26,62,0.45) 100%);
+  background: linear-gradient(110deg, rgba(0,0,0,0.88) 0%, rgba(20,20,20,0.72) 50%, rgba(0,0,0,0.48) 100%);
 }
 
 .slide-content {
@@ -606,7 +606,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 }
 .chip-label span {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.68rem;
   font-weight: 700;
   color: var(--text);
@@ -709,7 +709,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .teaser-icon { font-size: 1.4rem; flex-shrink: 0; }
 .teaser-card strong {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -778,7 +778,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .service-link {
   display: inline-block;
   margin-top: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -799,7 +799,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .stat { color: var(--primary-dark); }
 .stat-num {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 3rem;
   font-weight: 900;
   line-height: 1;
@@ -854,7 +854,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
   right: 12px;
   background: var(--primary-dark);
   color: var(--white);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -910,7 +910,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
   border: 2px solid var(--border);
   border-radius: 4px;
   background: var(--white);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -925,7 +925,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .colour-family { margin-bottom: 56px; }
 
 .family-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 1.1rem;
   font-weight: 800;
   color: var(--primary);
@@ -975,7 +975,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 }
 .chip-name {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.68rem;
   font-weight: 700;
   color: var(--text);
@@ -1025,7 +1025,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .badge-icon { font-size: 1.5rem; flex-shrink: 0; }
 .badge strong {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.82rem;
   font-weight: 700;
   color: var(--primary);
@@ -1036,7 +1036,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .badge p { font-size: 0.88rem; color: var(--text-muted); margin: 0; }
 
 .about-values h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 1.25rem;
   font-weight: 800;
   color: var(--primary);
@@ -1066,7 +1066,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
   padding: 26px;
 }
 .aims-box h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--accent-light);
@@ -1133,7 +1133,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .contact-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
 .contact-item strong {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -1157,7 +1157,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .form-group { margin-bottom: 18px; }
 .form-group label {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -1172,7 +1172,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
   padding: 11px 14px;
   border: 2px solid var(--border);
   border-radius: var(--radius-sm);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.93rem;
   color: var(--text);
   background: var(--white);
@@ -1183,7 +1183,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(200,122,10,0.16);
+  box-shadow: 0 0 0 3px rgba(232,93,4,0.18);
 }
 .form-group textarea { resize: vertical; }
 
@@ -1248,9 +1248,9 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .ss-pride-img-caption {
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  background: linear-gradient(transparent, rgba(7,26,62,0.88));
+  background: linear-gradient(transparent, rgba(0,0,0,0.88));
   color: var(--white);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   padding: 24px 16px 12px;
@@ -1292,7 +1292,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .ss-stat { text-align: left; }
 .ss-stat-num {
   display: block;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 2.4rem;
   font-weight: 900;
   color: var(--accent-light);
@@ -1322,7 +1322,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 
 /* ── CTA Banner ───────────────────────────────────────────── */
 .cta-banner {
-  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--navy-light) 100%);
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #2d2d2d 100%);
   padding: 80px 0;
   position: relative;
   overflow: hidden;
@@ -1332,7 +1332,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
   position: absolute;
   top: -50%; right: -10%;
   width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(240,180,41,0.12) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(232,93,4,0.10) 0%, transparent 70%);
   pointer-events: none;
 }
 .cta-inner {
@@ -1359,7 +1359,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 60%, var(--navy-light) 100%);
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 60%, #2d2d2d 100%);
   overflow: hidden;
   padding-top: calc(var(--nav-h) + var(--topbar-h));
 }
@@ -1372,7 +1372,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .page-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(7,26,62,0.85) 0%, rgba(13,42,92,0.65) 100%);
+  background: linear-gradient(135deg, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.65) 100%);
 }
 .page-hero-content {
   position: relative;
@@ -1420,7 +1420,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .footer-reg { font-size: 0.72rem; opacity: 0.5; margin-top: 8px; font-style: normal !important; }
 
 .footer-links h4, .footer-services h4, .footer-contact h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 2.5px;
@@ -1514,7 +1514,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
     border-top: none;
     border-left: 3px solid var(--accent);
     border-radius: 0;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.15);
     display: none;
   }
 
@@ -1587,7 +1587,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
   transition: var(--transition);
 }
 .testimonial-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
-.testimonial-stars { color: #f59e0b; font-size: 1rem; letter-spacing: 3px; margin-bottom: 14px; }
+.testimonial-stars { color: #e85d04; font-size: 1rem; letter-spacing: 3px; margin-bottom: 14px; }
 .testimonial-text {
   font-size: 0.93rem;
   color: var(--text-muted);
@@ -1605,7 +1605,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   flex-shrink: 0;
@@ -1654,7 +1654,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 /* ── Social Links (footer) ────────────────────────────────── */
 .footer-social { margin-top: 18px; }
 .footer-social h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -1705,7 +1705,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(transparent 45%, rgba(7,26,62,0.90) 100%);
+  background: linear-gradient(transparent 45%, rgba(0,0,0,0.90) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
   display: flex;
@@ -1729,7 +1729,7 @@ h2 { font-family: var(--font-display); font-weight: 400; letter-spacing: -0.3px;
 }
 .gallery-label {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 0.88rem;
   font-weight: 700;
   line-height: 1.3;

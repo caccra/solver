@@ -60,6 +60,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <!-- TOP CONTACT BAR -->
   <div class="topbar">
@@ -127,6 +128,7 @@
   </nav>
 
   <!-- PAGE HERO -->
+  <main id="main-content">
   <section class="page-hero" style="background-image:url('../images/solvor paints Apartment painting project.webp'); background-size:cover; background-position:center;">
     <div class="page-hero-overlay"></div>
     <div class="page-hero-content">
@@ -142,11 +144,11 @@
 
       <!-- Filter tabs -->
       <div class="colour-filter-tabs" id="galleryTabsBar">
-        <button class="tab-btn gallery-tab active" data-cat="all">All Projects</button>
-        <button class="tab-btn gallery-tab" data-cat="painting">Painting</button>
-        <button class="tab-btn gallery-tab" data-cat="glass">Glass &amp; Windows</button>
-        <button class="tab-btn gallery-tab" data-cat="construction">Construction</button>
-        <button class="tab-btn gallery-tab" data-cat="products">Paint Products</button>
+        <button class="tab-btn gallery-tab active" data-cat="all" aria-label="Filter gallery: All Projects">All Projects</button>
+        <button class="tab-btn gallery-tab" data-cat="painting" aria-label="Filter gallery: Painting">Painting</button>
+        <button class="tab-btn gallery-tab" data-cat="glass" aria-label="Filter gallery: Glass &amp; Windows">Glass &amp; Windows</button>
+        <button class="tab-btn gallery-tab" data-cat="construction" aria-label="Filter gallery: Construction">Construction</button>
+        <button class="tab-btn gallery-tab" data-cat="products" aria-label="Filter gallery: Paint Products">Paint Products</button>
       </div>
 
       <div class="gallery-grid">
